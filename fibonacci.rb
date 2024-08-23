@@ -11,7 +11,11 @@ end
 p fibs(8)
 
 def fibs_rec(n, result = [0, 1])
-  if result.size == n
+  if n == 0
+    result = [0]
+  elsif n == 1
+    result = [0, 1]
+  elsif result.size == n
     result
   else
     result << (result[-1] + result[-2])
@@ -19,4 +23,4 @@ def fibs_rec(n, result = [0, 1])
   end
 end
 
-p fibs_rec(8)
+p fibs_rec(1)

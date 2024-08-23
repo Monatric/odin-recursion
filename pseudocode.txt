@@ -1,0 +1,44 @@
+make a merge_sort method
+  takes 3 parameters: an array, lowest index, and highest index. arr, low, high names respectively
+  X(try muna walang parameter)
+  
+  if low less than high
+    mid = (low + high) / 2 [to divide the array into half]
+    merge_sort(arr[low..mid])
+    merge_sort(arr mid+1 to high)
+    merge()
+
+make a merge method
+  takes arrays parameter named arr1, arr2
+  i = 0, j = 0, k = 0, result = []
+  while i <= arr1.size && j <= arr2.size
+    if arr1[i] < arr2[j]
+      result << arr1[i]
+      k += 1
+      i += 1
+    else
+      result << arr2[j]
+      k += 1
+      j += 1
+    end
+  end
+
+  while i <= arr1.size
+    result << arr1[i]
+    i += 1
+  end
+
+  while j <= arr2.size
+    result << arr2[j]
+    j += 1
+  end
+  result
+end
+
+second attempt for merge method
+
+def merge()
+
+end
+
+
